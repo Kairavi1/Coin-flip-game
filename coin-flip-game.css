@@ -1,0 +1,82 @@
+/* style.css */
+
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 40px;
+    max-width: 400px;
+    width: 80%;
+    transition: transform 0.3s ease;
+}
+.container:hover {
+    transform: scale(1.02);
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.coin {
+    width: 150px;
+    height: 150px;
+    background-color: #f4d03f; /* Gold color */
+    border-radius: 50%;
+    margin: 20px auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.coin::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 90px;
+    height: 90px;
+    background-color: #f4d03f; /* Gold color */
+    border-radius: 50%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #3e4143; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #000;
+}
+
+#result {
+    font-size: 1.5em;
+    margin-top: 20px;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
